@@ -1,0 +1,13 @@
+packages:
+  # Libraries
+  - 'libs/**'
+  - 'packages/**'
+
+groups:
+  MyGroup:
+    - package1
+    - package2
+  Test:
+    - '@org/*-ui' # Select all packages that match the pattern
+  Build:
+    - core... # any kind of pnpm filter syntax works!

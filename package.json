@@ -1,0 +1,28 @@
+{
+  "name": "pnpmf",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arthurfiorette/pnpmf.git"
+  },
+  "license": "MIT",
+  "author": "Arthur Fiorette <me@arthur.place>",
+  "type": "module",
+  "main": "./index.js",
+  "bin": {
+    "pf": "index.js",
+    "pnpmf": "index.js"
+  },
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.3",
+    "@pnpm/find-workspace-dir": "^1000.0.1",
+    "@pnpm/workspace.read-manifest": "^1000.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
