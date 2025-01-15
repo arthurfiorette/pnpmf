@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { checkbox } from '@inquirer/prompts';
 import { findWorkspaceDir } from '@pnpm/find-workspace-dir';
 import { readWorkspaceManifest } from '@pnpm/workspace.read-manifest';
@@ -15,6 +17,10 @@ if (!root) {
 }
 
 const { groups } = await readWorkspaceManifest(root);
+
+if (!groups) {
+  fail('`groups` key not found in pnpm-workspace.yaml');
+}
 
 if (typeof groups !== 'object') {
   fail('`groups` key must be an object');
