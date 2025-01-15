@@ -1,7 +1,7 @@
 <h1 align="center">PNPMF</h1>
 
 <p align="center">
-  <img src="./example.png" alt="PNPMF Example">
+  <img src="./pnpmf.gif" alt="PNPMF Example">
 </p>
 
 A simple tool to run `pnpm` commands on selected groups of packages from your `pnpm-workspace.yaml`.
