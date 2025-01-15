@@ -48,8 +48,16 @@ for (const group of selected) {
   }
 }
 
+const argv = process.argv.slice(2);
+
+if (argv.length > 0) {
+  args.push(...argv);
+} else {
+  args.push('install');
+}
+
 // calls pnpm with the selected groups
-const result = cp.spawnSync('pnpm', args.concat(process.argv.slice(2)), {
+const result = cp.spawnSync('pnpm', args, {
   stdio: 'inherit',
   shell: true
 });
