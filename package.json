@@ -5,8 +5,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/arthurfiorette/pnpmf.git"
   },
+  "funding": "https://github.com/arthurfiorette/pnpmf?sponsor=1",
   "license": "MIT",
   "author": "Arthur Fiorette <me@arthur.place>",
+  "sideEffects": false,
   "type": "module",
   "main": "./index.js",
   "bin": {
