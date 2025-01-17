@@ -58,6 +58,7 @@ if (isTTY) {
 
 const argv = process.argv.slice(2);
 
+// `pnpm` alone is an alias for `pnpm install`
 if (argv.length > 0) {
   args.push(...argv);
 } else {
