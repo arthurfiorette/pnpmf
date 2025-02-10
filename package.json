@@ -1,6 +1,6 @@
 {
   "name": "pnpmf",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/arthurfiorette/pnpmf.git"
@@ -20,11 +20,14 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@inquirer/prompts": "^7.2.3",
-    "@pnpm/find-workspace-dir": "^1000.0.1",
-    "@pnpm/workspace.read-manifest": "^1000.0.1"
+    "@inquirer/prompts": "^7.3.1",
+    "@pnpm/filter-workspace-packages": "^1000.0.7",
+    "@pnpm/find-workspace-dir": "^1000.0.2",
+    "@pnpm/workspace.find-packages": "^1000.0.7",
+    "@pnpm/workspace.read-manifest": "^1000.0.2"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packageManager": "pnpm@9.15.3"
 }
